@@ -219,11 +219,15 @@
             box-shadow: var(--box-shadow);
             transition: var(--transition);
             cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: var(--text-primary);
         }
 
         .tool-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+            color: var(--text-primary);
         }
 
         .tool-icon {
@@ -480,11 +484,11 @@
         <nav>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Image Tools</a></li>
-                <li><a href="#">PDF Tools</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#image-tools">Image Tools</a></li>
+                <li><a href="#pdf-tools">PDF Tools</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
 
@@ -492,7 +496,7 @@
         <section class="hero">
             <h2>Transform Your Files in Seconds</h2>
             <p>Free online tools for all your image and PDF needs. No installation required - process files directly in your browser!</p>
-            <a href="#" class="cta-button">Get Started Now</a>
+            <a href="#image-tools" class="cta-button">Get Started Now</a>
         </section>
 
         <!-- Ad Space -->
@@ -513,135 +517,158 @@
         <section class="features">
             <h2 class="section-title">Why Choose FileTools Pro?</h2>
             <div class="features-grid">
-                <div class="feature-card">
+                <a href="#secure" class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-lock"></i>
                     </div>
                     <h3>100% Secure</h3>
                     <p>All processing happens in your browser. Your files never leave your computer.</p>
-                </div>
-                <div class="feature-card">
+                </a>
+                <a href="#fast" class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Lightning Fast</h3>
                     <p>Process images and PDFs in seconds with our optimized algorithms.</p>
-                </div>
-                <div class="feature-card">
+                </a>
+                <a href="#free" class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
                     <h3>Completely Free</h3>
                     <p>All our basic tools are free to use with no hidden costs.</p>
-                </div>
+                </a>
             </div>
         </section>
 
         <!-- Image Tools Section -->
-       <section class="tools">
-    <h2 class="section-title">Image Tools</h2>
-    <div class="tools-grid">
-        <a href="/Tool/img-compressor.html" class="tool-card">
-            <div class="tool-icon">
-                <i class="fas fa-compress-arrows-alt"></i>
-            </div>
-            <p>Image Compressor</p>
-        </a>
-    </div>
-</section>
-
+        <section id="image-tools" class="tools">
+            <h2 class="section-title">Image Tools</h2>
+            <div class="tools-grid">
+                <a href="/image-compressor" class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
                     <h3>Image Compressor</h3>
                     <p>Reduce image file size without losing quality</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/image-resizer" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-expand"></i>
                     </div>
                     <h3>Image Resizer</h3>
                     <p>Resize images to any dimension</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/format-converter" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
                     <h3>Format Converter</h3>
                     <p>Convert between JPG, PNG, WebP and more</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/image-cropper" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-crop-alt"></i>
                     </div>
                     <h3>Image Cropper</h3>
                     <p>Crop images to remove unwanted areas</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/image-enhancer" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-magic"></i>
                     </div>
                     <h3>Image Enhancer</h3>
                     <p>Improve image quality automatically</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/background-remover" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-file-image"></i>
                     </div>
                     <h3>Background Remover</h3>
                     <p>Remove image backgrounds with one click</p>
-                </div>
+                </a>
+                <a href="/image-rotator" class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <h3>Image Rotator</h3>
+                    <p>Rotate and flip images easily</p>
+                </a>
+                <a href="/watermark-tool" class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Watermark Tool</h3>
+                    <p>Add text or image watermarks to photos</p>
+                </a>
             </div>
         </section>
 
         <!-- PDF Tools Section -->
-        <section class="tools">
+        <section id="pdf-tools" class="tools">
             <h2 class="section-title">PDF Tools</h2>
             <div class="tools-grid">
-                <div class="tool-card">
+                <a href="/pdf-compressor" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-file-pdf"></i>
                     </div>
                     <h3>PDF Compressor</h3>
                     <p>Reduce PDF file size while maintaining quality</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/pdf-to-word" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-file-word"></i>
                     </div>
                     <h3>PDF to Word</h3>
                     <p>Convert PDF files to editable Word documents</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/pdf-to-excel" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-file-excel"></i>
                     </div>
                     <h3>PDF to Excel</h3>
                     <p>Extract tables from PDF to Excel spreadsheets</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/pdf-to-powerpoint" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-file-powerpoint"></i>
                     </div>
                     <h3>PDF to PowerPoint</h3>
                     <p>Convert PDF files to editable presentations</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/pdf-protector" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-lock"></i>
                     </div>
                     <h3>PDF Protector</h3>
                     <p>Add password protection to your PDF files</p>
-                </div>
-                <div class="tool-card">
+                </a>
+                <a href="/pdf-unlocker" class="tool-card">
                     <div class="tool-icon">
                         <i class="fas fa-unlock"></i>
                     </div>
                     <h3>PDF Unlocker</h3>
                     <p>Remove restrictions from PDF files</p>
-                </div>
+                </a>
+                <a href="/pdf-merger" class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <h3>PDF Merger</h3>
+                    <p>Combine multiple PDFs into one document</p>
+                </a>
+                <a href="/pdf-splitter" class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>PDF Splitter</h3>
+                    <p>Split PDF into multiple files</p>
+                </a>
             </div>
         </section>
 
         <!-- How It Works Section -->
-        <section class="how-it-works">
+        <section id="how-it-works" class="how-it-works">
             <h2 class="section-title">How It Works</h2>
             <div class="steps">
                 <div class="step">
@@ -686,7 +713,7 @@
         </div>
 
         <!-- Testimonials Section -->
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <h2 class="section-title">What Our Users Say</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
@@ -723,7 +750,7 @@
         </section>
 
         <!-- Footer -->
-        <footer>
+        <footer id="footer">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>FileTools Pro</h3>
@@ -739,10 +766,10 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Image Tools</a></li>
-                        <li><a href="#">PDF Tools</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#image-tools">Image Tools</a></li>
+                        <li><a href="#pdf-tools">PDF Tools</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -751,6 +778,14 @@
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="mailto:support@filetools.com">support@filetools.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="#">Help Center</a></li>
                     </ul>
                 </div>
             </div>
@@ -779,6 +814,24 @@
             
             // Initialize AdSense
             (adsbygoogle = window.adsbygoogle || []).push({});
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
